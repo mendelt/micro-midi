@@ -354,44 +354,10 @@ F 3 "~" H 8200 4600 50  0001 C CNN
 	1    8200 4600
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:AudioJack3 J4
-U 1 1 5E82CC92
-P 8200 5100
-F 0 "J4" H 7921 5033 50  0000 R CNN
-F 1 "AudioJack3" H 7921 5124 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8200 5100 50  0001 C CNN
-F 3 "~" H 8200 5100 50  0001 C CNN
-	1    8200 5100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7700 4600 7700 4700
-Connection ~ 7700 4700
-Wire Wire Line
-	7700 4700 6850 4700
 Wire Wire Line
 	8000 4600 7700 4600
-Wire Wire Line
-	7850 4700 7700 4700
-Wire Wire Line
-	8000 4700 7850 4700
-Connection ~ 7850 4700
-Wire Wire Line
-	7850 5100 7850 4700
-Wire Wire Line
-	8000 5100 7850 5100
-Wire Wire Line
-	7700 5000 7700 5200
-Wire Wire Line
-	8000 5000 7700 5000
-Wire Wire Line
-	8000 5200 7700 5200
-Wire Wire Line
-	6850 4700 6850 5200
-Connection ~ 7700 5200
-Wire Wire Line
-	7700 5200 6850 5200
 Connection ~ 5600 3950
 $Comp
 L power:GND #PWR05
@@ -460,17 +426,27 @@ F 3 "" H 4550 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 3950 5600 5200
-Wire Wire Line
-	6850 5200 5600 5200
-Wire Wire Line
 	5950 1950 6800 1950
-Connection ~ 6850 5200
-Connection ~ 5600 5200
-Wire Wire Line
-	5600 5200 5600 5500
 Wire Wire Line
 	4550 4550 4550 4900
 Wire Wire Line
 	4150 4550 4150 4900
+Wire Wire Line
+	5600 3950 5600 5500
+Wire Wire Line
+	7700 4700 8000 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5EA4A4EF
+P 7700 4850
+F 0 "#PWR?" H 7700 4600 50  0001 C CNN
+F 1 "GND" H 7705 4677 50  0000 C CNN
+F 2 "" H 7700 4850 50  0001 C CNN
+F 3 "" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4700 7700 4850
+Connection ~ 7700 4700
 $EndSCHEMATC
