@@ -36,39 +36,6 @@ F 3 "~" H 5950 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 5E7D6E0A
-P 4150 2800
-F 0 "R1" V 3943 2800 50  0000 C CNN
-F 1 "220R" V 4034 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 4080 2800 50  0001 C CNN
-F 3 "~" H 4150 2800 50  0001 C CNN
-	1    4150 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR04
-U 1 1 5E7D8E69
-P 5600 1150
-F 0 "#PWR04" H 5600 1000 50  0001 C CNN
-F 1 "+5V" H 5615 1323 50  0000 C CNN
-F 2 "" H 5600 1150 50  0001 C CNN
-F 3 "" H 5600 1150 50  0001 C CNN
-	1    5600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5E7D92E0
-P 5600 5500
-F 0 "#PWR05" H 5600 5250 50  0001 C CNN
-F 1 "GND" H 5605 5327 50  0000 C CNN
-F 2 "" H 5600 5500 50  0001 C CNN
-F 3 "" H 5600 5500 50  0001 C CNN
-	1    5600 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Isolator:6N137 U2
 U 1 1 5E7DA516
 P 5000 2800
@@ -83,8 +50,6 @@ Wire Wire Line
 	5600 1150 5600 1950
 Wire Wire Line
 	5600 2600 5300 2600
-Wire Wire Line
-	6800 1950 5950 1950
 Connection ~ 5600 1950
 Wire Wire Line
 	5600 1950 5600 2600
@@ -109,16 +74,11 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4450 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4300 2800 4450 2800
-Wire Wire Line
 	4450 2800 4700 2800
-Connection ~ 4450 2800
 Wire Wire Line
 	4700 3000 4700 3100
 Wire Wire Line
 	4700 3100 4450 3100
-Wire Wire Line
-	3150 2800 4000 2800
 Wire Wire Line
 	4450 3100 3800 3100
 Wire Wire Line
@@ -130,28 +90,6 @@ NoConn ~ 5300 2700
 NoConn ~ 3150 3000
 Wire Wire Line
 	6800 2700 6800 1950
-$Comp
-L 74xx:74AHC04 U3
-U 1 1 5E81332C
-P 6500 4500
-F 0 "U3" H 6500 4817 50  0000 C CNN
-F 1 "74AHC04" H 6500 4726 50  0000 C CNN
-F 2 "" H 6500 4500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 6500 4500 50  0001 C CNN
-	1    6500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC04 U1
-U 2 1 5E8174B8
-P 7300 4500
-F 0 "U1" H 7300 4817 50  0000 C CNN
-F 1 "74HC04" H 7300 4726 50  0000 C CNN
-F 2 "" H 7300 4500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7300 4500 50  0001 C CNN
-	2    7300 4500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5E8191AB
@@ -170,67 +108,10 @@ Wire Wire Line
 Connection ~ 5950 2800
 Wire Wire Line
 	7000 2900 5850 2900
-$Comp
-L Connector:AudioJack3 J3
-U 1 1 5E8296E3
-P 8200 4600
-F 0 "J3" H 7921 4533 50  0000 R CNN
-F 1 "AudioJack3" H 7921 4624 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8200 4600 50  0001 C CNN
-F 3 "~" H 8200 4600 50  0001 C CNN
-	1    8200 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:AudioJack3 J4
-U 1 1 5E82CC92
-P 8200 5100
-F 0 "J4" H 7921 5033 50  0000 R CNN
-F 1 "AudioJack3" H 7921 5124 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8200 5100 50  0001 C CNN
-F 3 "~" H 8200 5100 50  0001 C CNN
-	1    8200 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8000 5200 7700 5200
-Connection ~ 5600 5200
-Wire Wire Line
-	5600 5200 5600 5500
 Wire Wire Line
 	6800 4500 7000 4500
 Wire Wire Line
 	6200 4500 5850 4500
-Wire Wire Line
-	7600 4500 8000 4500
-Wire Wire Line
-	8000 4700 7850 4700
-Wire Wire Line
-	6850 4700 6850 5200
-Connection ~ 6850 5200
-Wire Wire Line
-	6850 5200 5600 5200
-Wire Wire Line
-	8000 4600 7700 4600
-Wire Wire Line
-	7700 4600 7700 4700
-Connection ~ 7700 4700
-Wire Wire Line
-	7700 4700 6850 4700
-Wire Wire Line
-	8000 5000 7700 5000
-Wire Wire Line
-	7700 5000 7700 5200
-Connection ~ 7700 5200
-Wire Wire Line
-	7700 5200 6850 5200
-Wire Wire Line
-	8000 5100 7850 5100
-Wire Wire Line
-	7850 5100 7850 4700
-Connection ~ 7850 4700
-Wire Wire Line
-	7850 4700 7700 4700
 $Comp
 L 74xx:74HC04 U1
 U 3 1 5E847663
@@ -313,9 +194,6 @@ Wire Wire Line
 	5850 3450 5850 4500
 Wire Wire Line
 	7000 3950 5600 3950
-Connection ~ 5600 3950
-Wire Wire Line
-	5600 3950 5600 5200
 Wire Wire Line
 	7600 3450 7800 3450
 Wire Wire Line
@@ -425,4 +303,174 @@ F 3 "" H 1500 3650 50  0001 C CNN
 	1    1500 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74AHC04 U3
+U 1 1 5E81332C
+P 6500 4500
+F 0 "U3" H 6500 4817 50  0000 C CNN
+F 1 "74AHC04" H 6500 4726 50  0000 C CNN
+F 2 "" H 6500 4500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U1
+U 2 1 5E8174B8
+P 7300 4500
+F 0 "U1" H 7300 4817 50  0000 C CNN
+F 1 "74HC04" H 7300 4726 50  0000 C CNN
+F 2 "" H 7300 4500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7300 4500 50  0001 C CNN
+	2    7300 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 2800
+Wire Wire Line
+	3150 2800 4000 2800
+Wire Wire Line
+	4300 2800 4450 2800
+$Comp
+L Device:R R1
+U 1 1 5E7D6E0A
+P 4150 2800
+F 0 "R1" V 3943 2800 50  0000 C CNN
+F 1 "220R" V 4034 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4080 2800 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 4500 8000 4500
+$Comp
+L Connector:AudioJack3 J3
+U 1 1 5E8296E3
+P 8200 4600
+F 0 "J3" H 7921 4533 50  0000 R CNN
+F 1 "AudioJack3" H 7921 4624 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8200 4600 50  0001 C CNN
+F 3 "~" H 8200 4600 50  0001 C CNN
+	1    8200 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack3 J4
+U 1 1 5E82CC92
+P 8200 5100
+F 0 "J4" H 7921 5033 50  0000 R CNN
+F 1 "AudioJack3" H 7921 5124 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8200 5100 50  0001 C CNN
+F 3 "~" H 8200 5100 50  0001 C CNN
+	1    8200 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 4600 7700 4700
+Connection ~ 7700 4700
+Wire Wire Line
+	7700 4700 6850 4700
+Wire Wire Line
+	8000 4600 7700 4600
+Wire Wire Line
+	7850 4700 7700 4700
+Wire Wire Line
+	8000 4700 7850 4700
+Connection ~ 7850 4700
+Wire Wire Line
+	7850 5100 7850 4700
+Wire Wire Line
+	8000 5100 7850 5100
+Wire Wire Line
+	7700 5000 7700 5200
+Wire Wire Line
+	8000 5000 7700 5000
+Wire Wire Line
+	8000 5200 7700 5200
+Wire Wire Line
+	6850 4700 6850 5200
+Connection ~ 7700 5200
+Wire Wire Line
+	7700 5200 6850 5200
+Connection ~ 5600 3950
+$Comp
+L power:GND #PWR05
+U 1 1 5E7D92E0
+P 5600 5500
+F 0 "#PWR05" H 5600 5250 50  0001 C CNN
+F 1 "GND" H 5605 5327 50  0000 C CNN
+F 2 "" H 5600 5500 50  0001 C CNN
+F 3 "" H 5600 5500 50  0001 C CNN
+	1    5600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E9891C0
+P 4550 4550
+F 0 "#FLG0101" H 4550 4625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4550 4723 50  0000 C CNN
+F 2 "" H 4550 4550 50  0001 C CNN
+F 3 "~" H 4550 4550 50  0001 C CNN
+	1    4550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E98E969
+P 4150 4900
+F 0 "#FLG0102" H 4150 4975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 5073 50  0000 C CNN
+F 2 "" H 4150 4900 50  0001 C CNN
+F 3 "~" H 4150 4900 50  0001 C CNN
+	1    4150 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5E7D8E69
+P 5600 1150
+F 0 "#PWR04" H 5600 1000 50  0001 C CNN
+F 1 "+5V" H 5615 1323 50  0000 C CNN
+F 2 "" H 5600 1150 50  0001 C CNN
+F 3 "" H 5600 1150 50  0001 C CNN
+	1    5600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5EA29925
+P 4150 4550
+F 0 "#PWR0101" H 4150 4400 50  0001 C CNN
+F 1 "+5V" H 4165 4723 50  0000 C CNN
+F 2 "" H 4150 4550 50  0001 C CNN
+F 3 "" H 4150 4550 50  0001 C CNN
+	1    4150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EA29FD7
+P 4550 4900
+F 0 "#PWR0102" H 4550 4650 50  0001 C CNN
+F 1 "GND" H 4555 4727 50  0000 C CNN
+F 2 "" H 4550 4900 50  0001 C CNN
+F 3 "" H 4550 4900 50  0001 C CNN
+	1    4550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3950 5600 5200
+Wire Wire Line
+	6850 5200 5600 5200
+Wire Wire Line
+	5950 1950 6800 1950
+Connection ~ 6850 5200
+Connection ~ 5600 5200
+Wire Wire Line
+	5600 5200 5600 5500
+Wire Wire Line
+	4550 4550 4550 4900
+Wire Wire Line
+	4150 4550 4150 4900
 $EndSCHEMATC
