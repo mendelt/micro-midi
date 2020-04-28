@@ -1,2 +1,6 @@
 # micro-midi
-Kicad project for Midi breakoutboard for microcontroller projects
+
+This is a KiCad pcb design for a Midi input and output breakout board for microcontroller projects.
+
+## Datasheets
+- [6n138](https://www.vishay.com/docs/84732/6n137.pdf)
