@@ -299,17 +299,6 @@ F 3 "" H 1500 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74AHC04 U3
-U 1 1 5E81332C
-P 6500 4500
-F 0 "U3" H 6500 4817 50  0000 C CNN
-F 1 "74AHC04" H 6500 4726 50  0000 C CNN
-F 2 "" H 6500 4500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 6500 4500 50  0001 C CNN
-	1    6500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74HC04 U1
 U 2 1 5E8174B8
 P 7300 4500
@@ -503,4 +492,15 @@ Wire Wire Line
 	8400 5150 8250 5150
 Wire Wire Line
 	8250 5150 8250 5350
+$Comp
+L 74xx:74HC04 U1
+U 1 1 5EA9FAAC
+P 6500 4500
+F 0 "U1" H 6500 4817 50  0000 C CNN
+F 1 "74HC04" H 6500 4726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6500 4500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
