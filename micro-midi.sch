@@ -41,7 +41,7 @@ U 1 1 5E7DA516
 P 5000 2800
 F 0 "U2" H 5000 3267 50  0000 C CNN
 F 1 "6N137" H 5000 3176 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5000 2300 50  0001 C CNN
+F 2 "Package_DIP:PowerIntegrations_SMD-8" H 5000 2300 50  0001 C CNN
 F 3 "https://docs.broadcom.com/docs/AV02-0940EN" H 4150 3350 50  0001 C CNN
 	1    5000 2800
 	1    0    0    -1  
