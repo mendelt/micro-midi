@@ -96,7 +96,7 @@ U 1 1 5E8191AB
 P 7200 2800
 F 0 "J2" H 7300 3050 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 7150 3050 50  0000 R CNN
-F 2 "" H 7200 2800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7200 2800 50  0001 C CNN
 F 3 "~" H 7200 2800 50  0001 C CNN
 	1    7200 2800
 	-1   0    0    -1  
