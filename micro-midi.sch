@@ -111,12 +111,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U1
 U 4 1 5E849640
-P 6500 5100
-F 0 "U1" H 6500 5417 50  0000 C CNN
-F 1 "74HC04" H 6500 5326 50  0000 C CNN
-F 2 "" H 6500 5100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6500 5100 50  0001 C CNN
-	4    6500 5100
+P 2100 4950
+F 0 "U1" H 2100 5267 50  0000 C CNN
+F 1 "74HC04" H 2100 5176 50  0000 C CNN
+F 2 "" H 2100 4950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 4950 50  0001 C CNN
+	4    2100 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -187,12 +187,12 @@ $EndComp
 $Comp
 L 74xx:74HC04 U1
 U 6 1 5E85C1A8
-P 2100 4950
-F 0 "U1" H 2100 5267 50  0000 C CNN
-F 1 "74HC04" H 2100 5176 50  0000 C CNN
-F 2 "" H 2100 4950 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 4950 50  0001 C CNN
-	6    2100 4950
+P 6500 5100
+F 0 "U1" H 6500 5417 50  0000 C CNN
+F 1 "74HC04" H 6500 5326 50  0000 C CNN
+F 2 "" H 6500 5100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6500 5100 50  0001 C CNN
+	6    6500 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -439,12 +439,12 @@ $EndComp
 $Comp
 L 74xx:74HC04 U1
 U 2 1 5E8174B8
-P 7200 3700
-F 0 "U1" H 7200 4017 50  0000 C CNN
-F 1 "74HC04" H 7200 3926 50  0000 C CNN
-F 2 "" H 7200 3700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7200 3700 50  0001 C CNN
-	2    7200 3700
+P 6500 3700
+F 0 "U1" H 6500 4017 50  0000 C CNN
+F 1 "74HC04" H 6500 3926 50  0000 C CNN
+F 2 "" H 6500 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6500 3700 50  0001 C CNN
+	2    6500 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -461,24 +461,20 @@ $EndComp
 $Comp
 L 74xx:74HC04 U1
 U 3 1 5E847663
-P 6400 3700
-F 0 "U1" H 6400 4017 50  0000 C CNN
-F 1 "74HC04" H 6400 3926 50  0000 C CNN
-F 2 "" H 6400 3700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6400 3700 50  0001 C CNN
-	3    6400 3700
+P 7200 3700
+F 0 "U1" H 7200 4017 50  0000 C CNN
+F 1 "74HC04" H 7200 3926 50  0000 C CNN
+F 2 "" H 7200 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7200 3700 50  0001 C CNN
+	3    7200 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 3700 6900 3700
 Wire Wire Line
 	5600 5100 6200 5100
 Wire Wire Line
 	5600 2800 5600 5100
 Wire Wire Line
 	5850 4600 6200 4600
-Wire Wire Line
-	5850 2900 5850 3700
 Wire Wire Line
 	8150 3700 8150 3900
 Wire Wire Line
@@ -495,7 +491,11 @@ F 3 "" H 7450 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 3700 5850 3700
+	5850 2900 5850 3700
+Wire Wire Line
+	6800 3700 6900 3700
+Wire Wire Line
+	6200 3700 5850 3700
 Connection ~ 5850 3700
 Wire Wire Line
 	5850 3700 5850 4600
