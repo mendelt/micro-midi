@@ -81,10 +81,6 @@ Wire Wire Line
 	4700 3100 4450 3100
 Wire Wire Line
 	4450 3100 3800 3100
-Wire Wire Line
-	3800 3100 3800 2900
-Wire Wire Line
-	3800 2900 3150 2900
 Connection ~ 4450 3100
 NoConn ~ 5300 2700
 NoConn ~ 3150 3000
@@ -265,8 +261,6 @@ F 3 "" H 1500 3650 50  0001 C CNN
 $EndComp
 Connection ~ 4450 2800
 Wire Wire Line
-	3150 2800 4000 2800
-Wire Wire Line
 	4300 2800 4450 2800
 $Comp
 L Device:R R1
@@ -408,10 +402,6 @@ F 3 "~" H 7850 4000 50  0001 C CNN
 	1    7850 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8150 3900 8300 3900
-Wire Wire Line
-	8000 3700 8150 3700
 $Comp
 L Device:R R5
 U 1 1 5EA652C0
@@ -428,12 +418,12 @@ Wire Wire Line
 $Comp
 L Connector:AudioJack3 J3
 U 1 1 5E8296E3
-P 8500 4000
-F 0 "J3" H 8221 3933 50  0000 R CNN
-F 1 "AudioJack3" H 8221 4024 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8500 4000 50  0001 C CNN
-F 3 "~" H 8500 4000 50  0001 C CNN
-	1    8500 4000
+P 9050 4000
+F 0 "J3" H 8771 3933 50  0000 R CNN
+F 1 "AudioJack3" H 8771 4024 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9050 4000 50  0001 C CNN
+F 3 "~" H 9050 4000 50  0001 C CNN
+	1    9050 4000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -475,19 +465,15 @@ Wire Wire Line
 	5600 2800 5600 5100
 Wire Wire Line
 	5850 4600 6200 4600
-Wire Wire Line
-	8150 3700 8150 3900
-Wire Wire Line
-	7450 4100 8300 4100
 $Comp
 L power:GND #PWR010
 U 1 1 5EA4A4EF
-P 7450 4100
-F 0 "#PWR010" H 7450 3850 50  0001 C CNN
-F 1 "GND" H 7455 3927 50  0000 C CNN
-F 2 "" H 7450 4100 50  0001 C CNN
-F 3 "" H 7450 4100 50  0001 C CNN
-	1    7450 4100
+P 8650 4100
+F 0 "#PWR010" H 8650 3850 50  0001 C CNN
+F 1 "GND" H 8655 3927 50  0000 C CNN
+F 2 "" H 8650 4100 50  0001 C CNN
+F 3 "" H 8650 4100 50  0001 C CNN
+	1    8650 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -499,4 +485,70 @@ Wire Wire Line
 Connection ~ 5850 3700
 Wire Wire Line
 	5850 3700 5850 4600
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5EDC636E
+P 3700 2800
+F 0 "FB1" V 3463 2800 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 3554 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 2800 50  0001 C CNN
+F 3 "~" H 3700 2800 50  0001 C CNN
+	1    3700 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5EDC7A59
+P 3700 3100
+F 0 "FB2" V 3463 3100 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 3554 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 3100 50  0001 C CNN
+F 3 "~" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3100 3300 3100
+Wire Wire Line
+	3300 3100 3300 2900
+Wire Wire Line
+	3300 2900 3150 2900
+Wire Wire Line
+	3150 2800 3600 2800
+Wire Wire Line
+	3800 2800 4000 2800
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 5EDCC5FB
+P 8400 3700
+F 0 "FB3" V 8163 3700 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 8254 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 3700 50  0001 C CNN
+F 3 "~" H 8400 3700 50  0001 C CNN
+	1    8400 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB4
+U 1 1 5EDCCBAB
+P 8400 4000
+F 0 "FB4" V 8163 4000 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 8254 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 4000 50  0001 C CNN
+F 3 "~" H 8400 4000 50  0001 C CNN
+	1    8400 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 3700 8300 3700
+Wire Wire Line
+	8500 3700 8650 3700
+Wire Wire Line
+	8650 3700 8650 3900
+Wire Wire Line
+	8650 3900 8850 3900
+Wire Wire Line
+	8850 4000 8500 4000
+Wire Wire Line
+	8650 4100 8850 4100
 $EndSCHEMATC
