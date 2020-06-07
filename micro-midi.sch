@@ -16,25 +16,13 @@ $EndDescr
 $Comp
 L Connector:AudioJack3 J1
 U 1 1 5E7D1AF1
-P 2950 2900
-F 0 "J1" H 2671 2833 50  0000 R CNN
-F 1 "AudioJack3" H 2671 2924 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 2950 2900 50  0001 C CNN
-F 3 "~" H 2950 2900 50  0001 C CNN
-	1    2950 2900
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E7D2F1C
-P 5950 2400
-F 0 "R2" H 5880 2354 50  0000 R CNN
-F 1 "10K" H 5880 2445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5880 2400 50  0001 C CNN
-F 3 "~" H 5950 2400 50  0001 C CNN
-F 4 " 667-ERJ-6ENF1002V " H 5950 2400 50  0001 C CNN "Mouser"
-	1    5950 2400
-	-1   0    0    1   
+P 2950 3000
+F 0 "J1" H 2671 2933 50  0000 R CNN
+F 1 "AudioJack3" H 2671 3024 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 2950 3000 50  0001 C CNN
+F 3 "~" H 2950 3000 50  0001 C CNN
+	1    2950 3000
+	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:6N137 U2
@@ -47,22 +35,6 @@ F 3 "https://docs.broadcom.com/docs/AV02-0940EN" H 4150 3350 50  0001 C CNN
 	1    5000 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 1150 5600 1950
-Wire Wire Line
-	5600 2600 5300 2600
-Connection ~ 5600 1950
-Wire Wire Line
-	5600 1950 5600 2600
-Wire Wire Line
-	5300 2800 5600 2800
-Wire Wire Line
-	5950 2250 5950 1950
-Connection ~ 5950 1950
-Wire Wire Line
-	5950 1950 5600 1950
-Wire Wire Line
-	5950 2550 5950 2800
 $Comp
 L Diode:1N4148 D1
 U 1 1 5E7E1942
@@ -84,9 +56,7 @@ Wire Wire Line
 	4450 3100 3800 3100
 Connection ~ 4450 3100
 NoConn ~ 5300 2700
-NoConn ~ 3150 3000
-Wire Wire Line
-	6800 2700 6800 1950
+NoConn ~ 3150 2900
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5E8191AB
@@ -100,11 +70,6 @@ F 3 "~" H 7200 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 2700 7000 2700
-Wire Wire Line
-	5950 2800 7000 2800
-Connection ~ 5950 2800
-Wire Wire Line
-	7000 2900 5850 2900
 $Comp
 L 74xx:74HC04 U1
 U 4 1 5E849640
@@ -119,7 +84,7 @@ $EndComp
 Wire Wire Line
 	5300 3000 5400 3000
 $Comp
-L Device:R R3
+L Device:R_Small R3
 U 1 1 5E84BB38
 P 7150 4600
 F 0 "R3" V 6943 4600 50  0000 C CNN
@@ -131,7 +96,7 @@ F 4 "667-ERJ-6ENF4700V" H 7150 4600 50  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R_Small R4
 U 1 1 5E84CE4D
 P 7150 5100
 F 0 "R4" V 6943 5100 50  0000 C CNN
@@ -164,14 +129,6 @@ F 3 "~" H 7650 5100 50  0001 C CNN
 	1    7650 5100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6800 4600 7000 4600
-Wire Wire Line
-	7300 4600 7500 4600
-Wire Wire Line
-	6800 5100 7000 5100
-Wire Wire Line
-	7300 5100 7500 5100
 $Comp
 L 74xx:74HC04 U1
 U 5 1 5E85AEF5
@@ -263,10 +220,8 @@ F 3 "" H 1500 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4450 2800
-Wire Wire Line
-	4300 2800 4450 2800
 $Comp
-L Device:R R1
+L Device:R_Small R1
 U 1 1 5E7D6E0A
 P 4150 2800
 F 0 "R1" V 3943 2800 50  0000 C CNN
@@ -313,12 +268,12 @@ $EndComp
 $Comp
 L power:+5V #PWR07
 U 1 1 5E7D8E69
-P 5600 1150
-F 0 "#PWR07" H 5600 1000 50  0001 C CNN
-F 1 "+5V" H 5615 1323 50  0000 C CNN
-F 2 "" H 5600 1150 50  0001 C CNN
-F 3 "" H 5600 1150 50  0001 C CNN
-	1    5600 1150
+P 6800 2550
+F 0 "#PWR07" H 6800 2400 50  0001 C CNN
+F 1 "+5V" H 6815 2723 50  0000 C CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 "" H 6800 2550 50  0001 C CNN
+	1    6800 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -344,8 +299,6 @@ F 3 "" H 4550 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1950 6800 1950
-Wire Wire Line
 	4550 4550 4550 4900
 Wire Wire Line
 	4150 4550 4150 4900
@@ -367,8 +320,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 3000 6800 3150
 Connection ~ 5600 2800
-Wire Wire Line
-	5600 2800 5950 2800
 $Comp
 L 74xx:74HC04 U1
 U 1 1 5EA9FAAC
@@ -380,8 +331,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6500 460
 	1    6500 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 4000 7700 4000
 $Comp
 L power:+5V #PWR09
 U 1 1 5EA789B7
@@ -393,10 +342,8 @@ F 3 "" H 7450 4000 50  0001 C CNN
 	1    7450 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 4000 8300 4000
 $Comp
-L Device:R R6
+L Device:R_Small R6
 U 1 1 5EA76B1A
 P 7850 4000
 F 0 "R6" V 7643 4000 50  0000 C CNN
@@ -408,7 +355,7 @@ F 4 " 667-ERJ-6ENF2200V " H 7850 4000 50  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R_Small R5
 U 1 1 5EA652C0
 P 7850 3700
 F 0 "R5" V 7643 3700 50  0000 C CNN
@@ -419,8 +366,6 @@ F 4 " 667-ERJ-6ENF2200V " H 7850 3700 50  0001 C CNN "Mouser"
 	1    7850 3700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7500 3700 7700 3700
 $Comp
 L Connector:AudioJack3 J3
 U 1 1 5E8296E3
@@ -515,16 +460,6 @@ F 4 "81-BLM21A601F" H 3700 3100 50  0001 C CNN "Mouser"
 	1    3700 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3600 3100 3300 3100
-Wire Wire Line
-	3300 3100 3300 2900
-Wire Wire Line
-	3300 2900 3150 2900
-Wire Wire Line
-	3150 2800 3600 2800
-Wire Wire Line
-	3800 2800 4000 2800
 $Comp
 L Device:Ferrite_Bead_Small FB3
 U 1 1 5EDCC5FB
@@ -550,8 +485,6 @@ F 4 "81-BLM21A601F" H 8400 4000 50  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8000 3700 8300 3700
-Wire Wire Line
 	8500 3700 8650 3700
 Wire Wire Line
 	8650 3700 8650 3900
@@ -561,4 +494,76 @@ Wire Wire Line
 	8850 4000 8500 4000
 Wire Wire Line
 	8650 4100 8850 4100
+Wire Wire Line
+	3150 3100 3600 3100
+Wire Wire Line
+	3600 2800 3400 2800
+Wire Wire Line
+	3400 2800 3400 3000
+Wire Wire Line
+	3400 3000 3150 3000
+$Comp
+L Device:R_Small R2
+U 1 1 5EDDAA06
+P 5600 2700
+F 0 "R2" H 5659 2746 50  0000 L CNN
+F 1 "10k" H 5659 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 2700 50  0001 C CNN
+F 3 "~" H 5600 2700 50  0001 C CNN
+F 4 " 667-ERJ-6ENF1002V " H 5600 2700 50  0001 C CNN "Mouser"
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2600 5600 2600
+Wire Wire Line
+	5300 2800 5600 2800
+Wire Wire Line
+	6800 2550 6800 2700
+$Comp
+L power:+5V #PWR?
+U 1 1 5EDDD8F7
+P 5600 2400
+F 0 "#PWR?" H 5600 2250 50  0001 C CNN
+F 1 "+5V" H 5615 2573 50  0000 C CNN
+F 2 "" H 5600 2400 50  0001 C CNN
+F 3 "" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2400 5600 2600
+Connection ~ 5600 2600
+Wire Wire Line
+	3800 2800 4050 2800
+Wire Wire Line
+	4250 2800 4450 2800
+Wire Wire Line
+	6800 5100 7050 5100
+Wire Wire Line
+	7250 5100 7500 5100
+Wire Wire Line
+	7250 4600 7500 4600
+Wire Wire Line
+	6800 4600 7050 4600
+Wire Wire Line
+	7500 3700 7750 3700
+Wire Wire Line
+	7450 4000 7750 4000
+Wire Wire Line
+	7950 4000 8300 4000
+Wire Wire Line
+	7950 3700 8300 3700
+Text Label 7000 2800 2    50   ~ 0
+Tx
+Text Label 5950 2800 2    50   ~ 0
+Tx
+Wire Wire Line
+	5600 2800 5950 2800
+Wire Wire Line
+	5850 2900 5950 2900
+Text Label 7000 2900 2    50   ~ 0
+Rx
+Text Label 5950 2900 2    50   ~ 0
+Rx
 $EndSCHEMATC
