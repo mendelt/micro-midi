@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title "Micro Midi")
-    (date 2020-06-04)
-    (rev 0.3.0)
+    (date 2020-06-07)
+    (rev 0.4.0)
   )
 
   (layers
@@ -916,7 +916,7 @@
   (gr_text github.com/mendelt/micro-midi (at 102.608 44.196) (layer B.SilkS) (tstamp 5EDAC024)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "micro midi rev 0.3.0" (at 102.608 42.164) (layer B.SilkS) (tstamp 5EDAC768)
+  (gr_text "micro midi rev 0.4.0" (at 102.608 42.164) (layer B.SilkS) (tstamp 5EDAC768)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_text tx (at 96.52 60.96 90) (layer B.SilkS) (tstamp 5EDABC6A)

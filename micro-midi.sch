@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Micro Midi interface"
-Date "2020-06-04"
-Rev "0.3.0"
+Date "2020-06-07"
+Rev "0.4.0"
 Comp ""
 Comment1 ""
 Comment2 ""
