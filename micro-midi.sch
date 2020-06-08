@@ -527,15 +527,15 @@ Wire Wire Line
 	9000 2200 9350 2200
 Wire Wire Line
 	9000 1900 9350 1900
-Text Label 5700 5800 2    50   ~ 0
+Text Label 5700 5900 2    50   ~ 0
 Tx
-Text Label 4400 2100 2    50   ~ 0
+Text Label 6600 1900 0    50   ~ 0
 Tx
 Wire Wire Line
 	4050 2100 4400 2100
-Text Label 5700 5900 2    50   ~ 0
+Text Label 5700 5800 2    50   ~ 0
 Rx
-Text Label 6600 1900 2    50   ~ 0
+Text Label 4400 2100 2    50   ~ 0
 Rx
 $Comp
 L 74xx:74HC04 U1
@@ -575,10 +575,10 @@ Wire Wire Line
 	6900 1900 6800 1900
 Connection ~ 6900 1900
 $Comp
-L Device:R_Small R?
+L Device:R_Small R7
 U 1 1 5EDEB40C
 P 6800 1700
-F 0 "R?" V 6593 1700 50  0000 C CNN
+F 0 "R7" V 6593 1700 50  0000 C CNN
 F 1 "20k" V 6684 1700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 1700 50  0001 C CNN
 F 3 "~" H 6800 1700 50  0001 C CNN
@@ -587,10 +587,10 @@ F 4 "667-ERJ-6ENF2002V" H 6800 1700 50  0001 C CNN "Mouser"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 5EDEBD23
 P 6800 1500
-F 0 "#PWR?" H 6800 1350 50  0001 C CNN
+F 0 "#PWR0103" H 6800 1350 50  0001 C CNN
 F 1 "+5V" H 6815 1673 50  0000 C CNN
 F 2 "" H 6800 1500 50  0001 C CNN
 F 3 "" H 6800 1500 50  0001 C CNN
